@@ -1,0 +1,66 @@
+<!-- Toolbar -->
+<!-- <div class="toolbar" role="banner"> -->
+<!-- <img
+    width=""
+   
+    src="https://www.seekpng.com/png/detail/234-2344009_ness-sprite-png-ness-earthbound-sprite.png"
+  /> -->
+
+
+<!--   
+<h1>{{title| uppercase}}</h1>
+<label width="40">👩👦</label> -->
+<!-- <span></span>
+  <div class="spacer"></div> -->
+<div class="content" role="main" ng-app="" style="  height: 10em;
+background-color:white;
+position: relative;margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+    ">
+
+  <div class="card highlight-card card-small">
+    <img width="100" class="bubble"
+      src="https://instagram.fewr1-6.fna.fbcdn.net/vp/e7bc9e5a013535307f3988cfdaca0159/5E774E9A/t51.2885-19/s150x150/50775483_626423071128663_1312087160031019008_n.jpg?_nc_ht=instagram.fewr1-6.fna.fbcdn.net" />
+    <span>Hi this is {{title}} we are having a boy!<br /> He's currently 34 weeks old. Miles is now ready to accept your
+      contributions!
+    
+      <br/>You can help contribute by clicking one the following links:
+      <br/><u>
+      <a href="https://www.amazon.com/baby-reg/cheryl-chen-december-2019-bayside/1VIH5T2HEBS12">Amazon Baby Registery</a></u>
+      <br/>
+      <u>
+      <a href="https://www.buybuybaby.com/store/giftRegistry/viewRegistryOwner/myItems/548206035">Buy Buy Baby Registery</a>
+    </u>
+  
+    </span>
+  </div>
+
+
+
+  <div style="text-align: center;">
+    
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <img src="https://i.pinimg.com/originals/3f/09/7d/3f097d06c136c6d4593d0689ad8210f5.gif"
+       (click)="displayQA=!displayQA;" />
+
+    <div *ngIf="displayQA" style="text-align: center;">
+      <app-active-tabs style="text-align: center;"></app-active-tabs>
+    </div>
+  </div>
+
+
+
+  <router-outlet></router-outlet>
