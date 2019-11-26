@@ -1,5 +1,5 @@
 <app-card-photos *ngIf="!genderAnswer"  (genderAnswered)="genderAnswered($event)"></app-card-photos>
-<app-card-photos *ngIf="genderAnswer" [displayOption]="1"></app-card-photos>
+<app-card-photos *ngIf="genderAnswer" [displayOption]="optionDisplay"></app-card-photos>
 <app-button-thank-you *ngIf="genderAnswer" (messageEvent)="receiveMessage($event)"></app-button-thank-you>
 <app-card-photos *ngIf="displayPhotos"></app-card-photos>
 <router-outlet></router-outlet>

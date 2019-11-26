@@ -10,8 +10,8 @@
       <p style="text-align: center;">
         {{data.text}}
         
-          <button *ngIf="data.option.one" mat-button  (click)="sendMessage(data.option.one)">{{data.option.one}}</button>
-          <button *ngIf="data.option.two" mat-button (click)="sendMessage(data.option.two)">{{data.option.two}}</button>
+          <button *ngIf="data.option && data.option.one" mat-button  (click)="sendMessage(data.option.one)">{{data.option.one}}</button>
+          <button *ngIf="data.option && data.option.two" mat-button (click)="sendMessage(data.option.two)">{{data.option.two}}</button>
          
       </p>
     </mat-card-content>
