@@ -1,0 +1,13 @@
+.example-card {
+    max-width: 400px;
+    max-height:500px;
+  }
+  .photo {
+    max-width: 400px;
+    max-height:400px;
+  }
+  .example-header-image {
+    /*background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');*/
+    background-image: url('https://instagram.fewr1-6.fna.fbcdn.net/vp/e7bc9e5a013535307f3988cfdaca0159/5E774E9A/t51.2885-19/s150x150/50775483_626423071128663_1312087160031019008_n.jpg?_nc_ht=instagram.fewr1-6.fna.fbcdn.net');
+    background-size: cover;
+  }

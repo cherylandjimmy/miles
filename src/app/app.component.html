@@ -1,17 +1,9 @@
-<!-- Toolbar -->
-<!-- <div class="toolbar" role="banner"> -->
-<!-- <img
-    width=""
-   
-    src="https://www.seekpng.com/png/detail/234-2344009_ness-sprite-png-ness-earthbound-sprite.png"
-  /> -->
-
-
-<!--   
-<h1>{{title| uppercase}}</h1>
-<label width="40">👩👦</label> -->
-<!-- <span></span>
-  <div class="spacer"></div> -->
+<app-card-photos *ngIf="!genderAnswer"  (genderAnswered)="genderAnswered($event)"></app-card-photos>
+<app-card-photos *ngIf="genderAnswer" [displayOption]="1"></app-card-photos>
+<app-button-thank-you *ngIf="genderAnswer" (messageEvent)="receiveMessage($event)"></app-button-thank-you>
+<app-card-photos *ngIf="displayPhotos"></app-card-photos>
+<router-outlet></router-outlet>
+<!-- 
 <div class="content" role="main" ng-app="" style="  height: 10em;
 background-color:white;
 position: relative;margin: 0;
@@ -23,7 +15,7 @@ position: relative;margin: 0;
     
     ">
 
-  <div class="card highlight-card card-small">
+  <div class="">
     <img width="100" class="bubble"
       src="https://instagram.fewr1-6.fna.fbcdn.net/vp/e7bc9e5a013535307f3988cfdaca0159/5E774E9A/t51.2885-19/s150x150/50775483_626423071128663_1312087160031019008_n.jpg?_nc_ht=instagram.fewr1-6.fna.fbcdn.net" />
     <span>Hi this is {{title}}! We are having a boy!<br /> Miles is currently 34 weeks old. He's now ready to accept your
@@ -38,14 +30,14 @@ position: relative;margin: 0;
     </u>
   
     </span>
-  </div>
+  </div> -->
 
-
+<!-- 
 
   <div style="text-align: center;">
     
     <br/>
-      <img src="https://i.pinimg.com/originals/3f/09/7d/3f097d06c136c6d4593d0689ad8210f5.gif"
+      <img width="100px;" src="https://i.pinimg.com/originals/3f/09/7d/3f097d06c136c6d4593d0689ad8210f5.gif"
        (click)="displayQA=!displayQA;" />
 
     <div *ngIf="displayQA" style="text-align: center;">
@@ -54,9 +46,7 @@ position: relative;margin: 0;
 
     
   
-  </div>
+  </div> -->
 
 
 
-
-  <router-outlet></router-outlet>
