@@ -12,7 +12,8 @@
         
           <button *ngIf="data.option && data.option.one" mat-button  (click)="sendMessage(data.option.one)">{{data.option.one}}</button>
           <button *ngIf="data.option && data.option.two" mat-button (click)="sendMessage(data.option.two)">{{data.option.two}}</button>
-         
+         <a href="data.addtionalOption[0].link" *ngIf="data.additionalOption" mat-button>{{data.additionalOption[0].text}}</a>
+         <a href="data.addtionalOption[1].link" *ngIf="data.additionalOption" mat-button>{{data.additionalOption[1].text}}</a>
       </p>
     </mat-card-content>
     

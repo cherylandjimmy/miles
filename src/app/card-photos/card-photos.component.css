@@ -3,7 +3,8 @@
     max-height:500px;
   }
   .photo {
-    max-width: 400px;
+    margin-left:5px;
+    max-width: 350px;
     max-height:400px;
   }
   .example-header-image {

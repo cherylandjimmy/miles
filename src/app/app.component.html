@@ -1,7 +1,13 @@
-<app-card-photos *ngIf="!genderAnswer"  (genderAnswered)="genderAnswered($event)"></app-card-photos>
-<app-card-photos *ngIf="genderAnswer" [displayOption]="optionDisplay"></app-card-photos>
-<app-button-thank-you *ngIf="genderAnswer" (messageEvent)="receiveMessage($event)"></app-button-thank-you>
-<app-card-photos *ngIf="displayPhotos"></app-card-photos>
+<app-card-photos *ngIf="!ready && !genderAnswer" (genderAnswered)="genderAnswered($event)" ></app-card-photos>
+ 
+ <div *ngIf="optionDisplay==3;else notShow">
+  <app-card-photos *ngIf="optionDisplay==3" (genderAnswered)="genderAnswered($event)" [displayOption]="optionDisplay"></app-card-photos>
+  <app-button-thank-you *ngIf="optionDisplay==3"  (messageEvent)="receiveMessage($event)"></app-button-thank-you>
+</div>
+<ng-template #notShow>
+  <app-card-photos *ngIf="ready && optionDisplay!=1" (genderAnswered)="genderAnswered($event)" [displayOption]="optionDisplay"></app-card-photos>
+  <app-card-photos *ngIf="genderAnswer && optionDisplay==1" (genderAnswered)="genderAnswered($event)" [displayOption]="optionDisplay"></app-card-photos>
+</ng-template>
 <router-outlet></router-outlet>
 <!-- 
 <div class="content" role="main" ng-app="" style="  height: 10em;
