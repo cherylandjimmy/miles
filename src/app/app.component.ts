@@ -16,9 +16,15 @@ export class AppComponent implements OnInit {
     var v_stage = sessionStorage.getItem('ff');
     if (v_stage == null) {
       this.optionDisplay = 0;
+      this.ready = false;
+      this.genderAnswer = '';
+      sessionStorage.remoteItem('ff');
+      this.ready = false;
     }
     else {
       this.optionDisplay = Number(v_stage);
+      this.ready = true;
+      
     }
   }
 
@@ -48,7 +54,11 @@ export class AppComponent implements OnInit {
     }
   }
   receiveMessage($event) {
-    this.displayPhotos = $event;
-    this.optionDisplay = $event == "Boy" ? 2 : 1;
+    this.ready = false;
+    this.genderAnswer = '';
+    this.optionDisplay = 0;
+    sessionStorage.remoteItem('ff');
+    //this.displayPhotos = $event;
+    //this.optionDisplay = $event == "Boy" ? 2 : 1;
   }
 }
