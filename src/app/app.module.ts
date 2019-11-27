@@ -5,7 +5,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'; // <-- NgMode
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ActiveTabsComponent } from './active-tabs/active-tabs.component';
-import { MatCardModule } from '@angular/material/card';
+import { MatCardModule, MatMenuModule } from '@angular/material';
+
 import { CardPhotosComponent } from './card-photos/card-photos.component';
 import {MatNativeDateModule} from '@angular/material/core';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
@@ -26,7 +27,8 @@ import { ButtonThankYouComponent } from './button-thank-you/button-thank-you.com
     MatCardModule,
     HttpClientModule,
     MatNativeDateModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatMenuModule
   ],
   providers: [],
   entryComponents: [AppComponent,CardPhotosComponent],

@@ -14,13 +14,14 @@ export class AppComponent {
   ready:boolean=false;
   optionDisplay:number = 0;
   displayPhotos:Boolean;
+  genderAnswer:string;
   genderAnswered($event) {
     this.genderAnswer = $event;
     console.log($event,this.genderAnswer );
     if ($event =="Start Over"){
       this.optionDisplay = 0;
       this.ready = false;
-      this.genderAnswer = false;
+      this.genderAnswer = '';
     }
     else if ($event =="Skip")
     {

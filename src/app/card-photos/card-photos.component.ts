@@ -20,8 +20,10 @@ export class CardPhotosComponent implements OnInit {
     text:"We are having a boy! His name will be Miles and he is currently 34 weeks old."},
 
     {src:'https://lh3.googleusercontent.com/26Db1Jh0EDTSIvkEK-c0qJehSsKmeAX65VQTSh1Be5YdeZfEtTVFIjlQDKEOhYG0IbHGil0MAvK90ZauiGOEQtHv4A3RUDV6x1FwzNeK7gFuEdAKZeI8He5zi-AXg9XLR_7_nwIet8Y=w1920-h1080', 
-     additionalOption:[{text:'Amazon', link:''},{text:'Buy Buy Baby', link:''}],
-     option: {one:'',two:'Start Over'}, title:'Miles is now ready to accept your contributions', subtitle:"", text:"Miles is now ready to accept your contributions! Thank you for your support!"},
+     additionalOption:[{text:'Amazon Baby Registry', link:'https://www.amazon.com/baby-reg/cheryl-chen-december-2019-bayside/1VIH5T2HEBS12'},
+     {text:'Buy Buy Baby Registry', link:'https://www.buybuybaby.com/store/giftRegistry/viewRegistryOwner/myItems/548206035'}],
+
+     option: {one:'',two:''}, title:'We are now ready to accept your contributions', subtitle:"", text:"Thank you for your support!"},
     
   ];
   answer: string = '';

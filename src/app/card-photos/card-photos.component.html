@@ -9,12 +9,24 @@
     <mat-card-content>
       <p style="text-align: center;">
         {{data.text}}
-        https://stackoverflow.com/questions/50544464/angular-mat-button-link-to-external-url
-          <button *ngIf="data.option && data.option.one" mat-button  (click)="sendMessage(data.option.one)">{{data.option.one}}</button>
+          <button *ngIf="data.option && data.option.one" mat-button (click)="sendMessage(data.option.one)">{{data.option.one}}</button>
           <button *ngIf="data.option && data.option.two" mat-button (click)="sendMessage(data.option.two)">{{data.option.two}}</button>
-         <a href="data.addtionalOption[0].link" *ngIf="data.additionalOption" mat-button>{{data.additionalOption[0].text}}</a>
-         <a href="data.addtionalOption[1].link" *ngIf="data.additionalOption" mat-button>{{data.additionalOption[1].text}}</a>
+          <br />
+          <i *ngFor="let item of data.additionalOption">
+              <button mat-button *ngIf="data.additionalOption">
+                  <a href="item.link">{{item.text}}</a>
+                </button>
+          </i>
       </p>
+
     </mat-card-content>
-    
   </mat-card>
+
+      
+
+          <!-- <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+         <mat-menu #menu="matMenu">
+           <a href="http://www.google.com" mat-menu-item>Item 1</a>
+           <button mat-menu-item>Item 2</button>
+           <a href="data.addtionalOption[0].link" *ngIf="data.additionalOption" mat-button>{{data.additionalOption[0].text}}</a>
+          </mat-menu> -->
