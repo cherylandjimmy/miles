@@ -11,11 +11,12 @@
           <button *ngIf="data.option && data.option.one" mat-button (click)="sendMessage(data.option.one)">{{data.option.one}}</button>
           <button *ngIf="data.option && data.option.two" mat-button (click)="sendMessage(data.option.two)">{{data.option.two}}</button>
           <br />
-          <i *ngIf="data.additionalOption" *ngFor="let item of data.additionalOption">
+          <i *ngIf="data.additionalOption">
+          <i  *ngFor="let item of data.additionalOption">
               <button mat-button *ngIf="data.additionalOption">
                   <a href="{{item.link}}">{{item.text}}</a>
               </button>
-          </i>
+          </i></i>
       </p>
     </mat-card-content>
   </mat-card>
