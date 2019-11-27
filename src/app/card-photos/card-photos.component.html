@@ -4,8 +4,7 @@
       <mat-card-title>{{data.title}}</mat-card-title>
       <mat-card-subtitle>{{data.subtitle}}</mat-card-subtitle>
     </mat-card-header>
-    <img class="photo" mat-card-image src="{{data.src || 'https://material.angular.io/assets/img/examples/shiba2.jpg'}}" 
-    alt="Photo of a Shiba Inu">
+    <img class="photo" mat-card-image src="{{data.src || 'https://material.angular.io/assets/img/examples/shiba2.jpg'}}" >
     <mat-card-content>
       <p style="text-align: center;">
         {{data.text}}
@@ -14,11 +13,10 @@
           <br />
           <i *ngFor="let item of data.additionalOption">
               <button mat-button *ngIf="data.additionalOption">
-                  <a href="item.link">{{item.text}}</a>
-                </button>
+                  <a href="{{item.link}}">{{item.text}}</a>
+              </button>
           </i>
       </p>
-
     </mat-card-content>
   </mat-card>
 
