@@ -6,7 +6,7 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
   styleUrls: ['./card-photos.component.css']
 })
 export class CardPhotosComponent implements OnInit {
-  data:object ;
+  data:any ;
   list:Array<any> = [
     {src:'https://lh3.googleusercontent.com/9oXXeJO8nzU8Q8lUwgsJA8ell6dGJRcQ7Tf7G7Si4CaXfhBB3U7jR8mxYhZ_EGCoELBMinkTchriBCI4Lkz9LrXCm20W_VJ0zAQcAZPcg-wh_2rYpbgLXGt1O3L4arX3M9hvZaI5qJFa1e83R_h5-qFZe43Vg0Cgax1CPBcwnzaPxjIUDaz6CYGGB-9oo_Asl_KFXfpOQHzj8FAGxFRP3HVvmh8ZXQejMaMjpbGmnmIN-Qv5ICOqvA-XvOINVLHxcRaWkOsZk_pnpa-sqzZ9Rkld1V44-ZqJLEKwy3E-x_JE8YItoPVj_ObuYNSxIsr-JFQBCBDfOohcLxBUUmWouNq4sB_3uHq7vLIucL3LglqSrxR4wUKwlwSRb7SgIgXslNwnwDOU_8O6K1cVitW1PPWljh94bKEE1bUuIINq6aRoOmRu3mw982d3D7N7u-4WeHWj9CGiVliwKWCc_duKq2r6_08xrahSDKvKjC-9F2AvqLdS6B3QoYm9ljFNFU9WfrVoIWFSKC1xFyQnJ9qvYoQovzYj2gMl2Vb2V_7IeZxiSwfu4RhdomyONhTJmEN6QkOOvX-hfSaZ0ZhMm9W2GIrAoAu7wPl2km7dZM6xTld-3kl4Rk1HAQTemjro4XcTF9GHzgumUn7aQZ4ejUufHWxmYdoN652oTklh86tHS8AEv5K-ArGZTm6R1qhK_mtX704IkymrsKadofXdJluJk_jRr___v7yZmqRBsoff8mZq_myh=w687-h915-no', 
     option: {one: 'Ready', two:'Skip'}, title:'Jimmy And Cheryl', subtitle:"Guess our baby's gender?", text:'Are you ready?'},
